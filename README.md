@@ -1,17 +1,12 @@
-ZeroBin 0.19 Alpha
+PasteBinuits
 
 ==== THIS IS ALPHA SOFTWARE - USE AT YOUR OWN RISKS ====
 
 ZeroBin is a minimalist, opensource online pastebin where the server 
-has zero knowledge of pasted data. Data is encrypted/decrypted in the 
-browser using 256 bits AES. 
-
-More information on the project page:
-http://sebsauvage.net/wiki/doku.php?id=php:zerobin
+has zero knowledge of pasted data. Data is encrypted/decrypted in the browser using 256 bits AES.
 
 ------------------------------------------------------------------------------
-
-Copyright (c) 2012 Sébastien SAUVAGE (sebsauvage.net)
+Originally forked from ZeroBin 0.19 Alpha which is Copyright (c) 2012 Sébastien SAUVAGE (sebsauvage.net)
 
 This software is provided 'as-is', without any express or implied warranty.
 In no event will the authors be held liable for any damages arising from 
