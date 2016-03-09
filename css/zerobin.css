@@ -199,6 +199,8 @@ font-weight:bold !important;
 button#newbutton { float:right; margin-right:0px;margin-bottom:5px; display:inline; }
 input { color:#777; font-size:1em; padding:6px; border: 1px solid #28343F; }
 
+input[type=checkbox]{position:relative; top:3px;}
+
 .nonworking {
 background-color:#fff;
 color:#000;
