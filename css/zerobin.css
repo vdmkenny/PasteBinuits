@@ -54,7 +54,7 @@ position:relative;
 bottom:8px;} 
   
 h3 { 
-color:#94a3b4; 
+color:#d3d3d3; 
 font-size:0.7em; 
 display:inline; 
 position:relative; 
@@ -245,7 +245,7 @@ color:#FF0;
 
 div#discussion {  /* Discussion container */
 margin-top:20px;
-width:100%;
+width:calc(100% + 30px);
 margin-left:-30px;
 min-width:200px;
 }
@@ -262,13 +262,13 @@ margin-left:30px;
 
 div.comment /* One single reply */
 {
-background-color:#CECED6;
+background-color:#EDEDED;
 color:#000;
 white-space:pre-wrap;
 font-family:Consolas,"Lucida Console","DejaVu Sans Mono",Monaco,monospace;
 font-size:9pt;
-border-left: 1px solid #859AAE;
-border-top: 1px solid #859AAE;
+border-left: 1px solid #515151;
+border-top: 1px solid #515151;
 padding:5px 0px 5px 5px;
 margin-left:30px;
 -moz-box-shadow: -3px -3px 5px rgba(0,0,0,0.15);
@@ -341,14 +341,14 @@ margin-top:5px;
 }
 
 div.commentmeta {
-color: #fff;
-background-color:#8EA0B2;
+color: #262626;
+background-color:#ECECEC;
 margin-bottom:3px;
 padding:0px 0px 0px 3px;
 }
 
 span.commentdate {
-color: #BFCEDE;
+color: #A5A5A5;
 }
 
 img.vizhash {
