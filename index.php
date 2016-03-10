@@ -3,7 +3,22 @@
 ZeroBin - a zero-knowledge paste bin
 Please see project page: http://sebsauvage.net/wiki/doku.php?id=php:zerobin
 */
-$VERSION='Alpha 0.19';
+$VERSION='Alpha 0.20';
+$RAND_TITLE='Placeholder title!';
+
+$input = array("Now gluten free!", 
+    "Because ignorance is bliss.", 
+    "Fork me on github!", 
+    "Everything is a DNS problem.", 
+    "Some things Man was never meant to know. For everything else, there's Google.",
+    "After Perl everything else is just assembly language.",
+    "Microsoft: You've got questions. We've got dancing paperclips.", 
+    "My software never has bugs. It just develops random features.",
+    "Two things came out of Berkeley: LSD and BSD. Coincidence?",
+    "Here be dragons");
+
+$RAND_TITLE = $input[array_rand($input, 1)];
+
 if (version_compare(PHP_VERSION, '5.2.6') < 0) die('ZeroBin requires php 5.2.6 or above to work. Sorry.');
 require_once "lib/serversalt.php";
 require_once "lib/vizhash_gd_zero.php";
@@ -423,6 +438,7 @@ header('Content-Type: text/html; charset=utf-8');
 $page = new RainTPL;
 $page->assign('CIPHERDATA',htmlspecialchars($CIPHERDATA,ENT_NOQUOTES));  // We escape it here because ENT_NOQUOTES can't be used in RainTPL templates.
 $page->assign('VERSION',$VERSION);
+$page->assign('RAND_TITLE',$RAND_TITLE);
 $page->assign('ERRORMESSAGE',$ERRORMESSAGE);
 $page->assign('STATUS',$STATUS);
 $page->draw('page');
